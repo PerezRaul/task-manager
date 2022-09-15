@@ -1,0 +1,10 @@
+parameters:
+	level: max
+	paths:
+		- app
+		- src
+	checkGenericClassInNonGenericObjectType: false
+	checkMissingIterableValueType: false
+	parallel:
+		processTimeout: 300.0
+		maximumNumberOfProcesses: 4

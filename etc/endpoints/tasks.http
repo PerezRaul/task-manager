@@ -1,0 +1,40 @@
+# Tasks get
+GET {{host}}/tasks
+Accept: application/json
+Content-Type: application/json
+
+{
+    "per_page": 20,
+    "page": 1
+}
+
+###
+
+# Task put
+PUT {{host}}/tasks/3be42fc8-afc4-4ef0-b1e5-2581fae2b404
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title": "Test Example",
+    "is_finished": true
+}
+
+###
+
+# Task get by id
+GET {{host}}/tasks/3be42fc8-afc4-4ef0-b1e5-2581fae2b404
+Accept: application/json
+Content-Type: application/json
+
+{
+    "per_page": 20,
+    "page": 1
+}
+
+###
+
+# Task delete by id
+DELETE {{host}}/tasks/3be42fc8-afc4-4ef0-b1e5-2581fae2b404
+Accept: application/json
+Content-Type: application/json
